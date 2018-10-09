@@ -1,0 +1,34 @@
+body {
+    background-color: aquamarine;
+    color: darkgreen;
+    border: 4pt solid;
+    text-align: center;
+    margin: 50px;
+}
+
+p#first , img {
+    display: block;
+    background-color: white;
+    border: 4pt double;
+    height: auto;
+    width: auto;
+    font-size: 40pt;
+    font-style: oblique;
+    vertical-align: middle;
+    margin: 10px;
+}
+
+span {
+    background-color: red;
+    color: white;
+    /*border: 4pt solid;*/
+    font-size: 40pt;
+    text-decoration-color: white;
+    text-decoration: underline;
+    
+}
+img {
+    display: inline-block;
+    color: darkgreen;
+    border: 4pt solid;
+}

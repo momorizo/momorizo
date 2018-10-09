@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="hu">
+    <head>
+        <meta charset="utf-8">
+        <title>JavaScript - Másodfokú egyenlet</title>
+        <link rel="stylesheet"  href="css/main.css">                       
+        <script src="scripts/formatProperCoeff.js"></script>
+        <script src="scripts/formatCalculate.js"></script>
+        <script src="scripts/formatBack.js"></script>
+        <script src="scripts/formatFirstDegree.js"></script>
+        <script src="scripts/formatQuadratic.js"></script>      
+        <script src="scripts/solutionFirstDegree.js"></script>
+        <script src="scripts/solutionQuadratic.js"></script>
+        <script src="scripts/solution.js"></script>
+    </head>
+    <body>
+        <nav id="KZnav" name="navi">
+            <h1 id="KZheaderh1">MATEMATIKA: a másodfokú egyenlet
+                <a id="main-link" href="pages/elmelet.html"> 
+                    elmélete
+                </a> 
+                és megoldása
+            </h1>
+        </nav>
+        <aside>        
+        </aside>
+        <section>
+            <h4>
+                <!--
+                <svg  width="500" height="100" src="./svg/Quadratic_equation">
+                </svg>
+                /////////////
+                <svg  style="width: 500 height: 100 vertical-align: -0.505ex;" viewBox="0 -1006.6 7598.5 1223.9" src="./svg/Quadratic_equation">
+                </svg>
+                -->
+                A másodfokú egyenlet <i>általános</i> alakja:&nbsp; 
+                <a  href="pages/elmelet.html">
+                    <img width="25%" src="images/general.shape.of.quadratic.equation_winner.png"> 
+                </a>ahol <span><i>a</i> nem nulla, <i>&nbsp;a, b és c</i></span> valós értékűek     
+           </h4>
+           <!--<div>-->
+           <form name="solutionForm">
+                <br>
+                <fieldset id="fieldsetOne">
+                    <legend id="legendOne">
+                        Egyenlet megoldása, ha az:    
+                          <span style="color: red; font-style: normal">
+                              <strong>a, b, c</strong> együtthatók értékeit az alábbiakkal helyettesítjük
+                          </span>                             
+                    </legend>
+                    <div id=solution_combo> 
+                        <div id="coefficients-equation-div">
+                            <p>
+                                <label>
+                                    Az <b>a</b> együttható értéke: 
+                                    <input id="a"  type="number" name="a_egy" required placeholder="számot vár" onchange="changePropCoeff()" autofocus>
+                                    <!--
+                                     <input id="a"  type="text" name="a_egy" required placeholder="számot vár" onchange="key_a_coeff()" autofocus > 
+                                    -->  
+                                </label>
+                            </p>
+                            <p>
+                                <label>
+                                    A <b>b</b> együttható értéke: 
+                                    <input id="b" type="number" name="b_egy" required placeholder="számot vár">  
+                                </label>
+                            </p>
+                            <p>
+                                <label>
+                                    A <b>c</b> együttható értéke: 
+                                    <input id="c" type="number" name="c_egy" required placeholder="számot vár">  
+                                </label>
+                            </p>
+                        </div>
+                        <div id="solution-div" name="solutionDiv">   
+                            <div id="sol-one-div">       <!-- solution div for display button  -->
+                               <button id="solution-button"  name="solutionButton" type="button" value="calculate" onclick="calculate()">
+                                <span id="span-button" style="color: white;font-size:25pt"><b>Számolás</b></span>
+                               </button>
+                            </div>
+                            <div id="sol-second-div">    <!-- solution div for display eguation  --> 
+                                <span id="span-equation" style="font-size:20pt"><b><i>Egyenlet</i></b>
+                                </span>
+                            </div>
+                        </div>
+                        <div id="rootResultFirstDegree-div">
+                            <p>
+                                <label>
+                                    Az <b>x</b> gyök értéke :<br> 
+                                    <input id="x" type="text" name="x_gyok" placeholder="az EGYETLEN gyök">  
+                                </label>
+                            </p>
+                        </div>
+                        <div id="rootResultsQuadratic-div">
+                            <p>
+                                <label>
+                                    Az <b>x1</b> gyök értéke :<br> 
+                                    <input id="x1" type="text" name="x1_gyok" placeholder="egyik gyök">  
+                                </label>
+                            </p>
+                            <p>
+                                <label>
+                                    Az <b>x2</b> gyök értéke :<br> 
+                                    <input id="x2" type="text" name="x2_gyok" placeholder="másik gyök">  
+                                </label>
+                            </p>
+                        </div>    <!-- div rootResultsQuadratic -->
+                    </div>  <!-- div solution-combo -->
+                    <div id=back-div>
+                        <input id="back-reset-button" type="reset" value="Vissza">
+                    </div>
+                </fieldset>
+            </form>
+            <!--
+            </div> -->
+        </section>
+    </body>
+</html>

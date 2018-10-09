@@ -1,0 +1,143 @@
+body {
+    background-color: aquamarine;
+    color: darkgreen;
+    text-align: center;
+    margin: 50px;    /* deletable */
+    min-width: 600px;
+    max-width: 1024px;
+}
+
+nav {
+    width: auto;
+    /*height: inherit;*/
+    border: 4pt solid ; /* or 0.3em solid */
+}
+
+section {
+    width:auto;
+    height: auto;
+}
+
+fieldset {
+    min-height: 400px;
+}
+
+fieldset  , legend {
+    border: 4pt solid; /* or double */
+    text-align: left;
+    font-size: 15pt;
+    color: maroon;
+    font-style: oblique;
+    background-color: #65a765;
+    /*min-height: 100px; */
+    /*max-width: 800px;*/
+}
+
+legend {
+    background-color: white;
+    border-color: maroon;
+    border-style: double;
+    margin-left: 20px;
+}
+
+
+div p {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+
+div p input {
+    margin: auto;
+    /*width: 50px;*/
+    min-width: 75px;
+    
+}
+
+
+#solution-combo {
+    margin: 10px;
+    min-height: 500px;
+}
+
+
+#coefficients-equation-div , #solution-div , #rootResultFirstDegree-div , #rootResultsQuadratic-div , #back-div
+/*,#sol-one-div */ {
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    border:  4pt  double; 
+    background-color: aquamarine;
+    /*min-width: 300px;*/
+    /*height: 250px;*/
+    margin-top: 50px;
+    margin-bottom: 50px;*/
+}
+
+#back-div {
+    display: block;
+    background-color: darkgreen;
+    max-width: 100%;
+    margin-top: 10px;
+    /*margin-left: inherit;*/
+}
+
+#solution-div  {    
+    width: 220px;
+    height: auto;
+    }
+
+#solution-button , #back-reset-button {
+    background-color: darkgreen;    
+    width : inherit;
+    height: 100%;
+    /*margin-left: 0;
+    margin-right: 0;
+    padding-top: 0;
+    padding-left: 0;
+    padding-bottom: 0;
+    padding-right: 0;
+    /*text-align: center; */    
+}
+
+#back-reset-button {
+    width: 100%;
+    height: 100%;
+    color: white;
+    font-size: 25pt;
+}
+
+#sol-one-div {
+    height: inherit;
+}
+
+#sol-one-div , #sol-second-div {
+    display: block;
+    vertical-align: top;
+    margin: 0px;
+    width : inherit;
+    height: 50%;
+    border: none;
+}
+
+#sol-second-div {
+    background-color: white;
+    color: red;
+    /*width:  100%;
+    border:  4pt  double; */
+}
+
+#span-equation {
+    text-align: center;
+    height: auto;
+}
+
+/*
+#sol-second-div {
+    visibility: hidden;
+} */
+
+ #rootResultFirstDegree-div , #rootResultsQuadratic-div  {
+    display: none;
+    /*visibility: hidden;    */
+}
